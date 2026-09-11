@@ -1,0 +1,6 @@
+{
+  "name": "Habit Tracker",
+  "description": "Aplicación progresiva estilo Apple/iOS para seguimiento mensual de hábitos con gráficas interactivas y recordatorios en modo oscuro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

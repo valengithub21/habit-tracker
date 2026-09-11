@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="50%" stop-color="#007AFF"/>
+      <stop offset="100%" stop-color="#5856D6"/>
+    </linearGradient>
+    <linearGradient id="ringGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF375F"/>
+      <stop offset="100%" stop-color="#FF2D55"/>
+    </linearGradient>
+    <linearGradient id="ringGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30D158"/>
+      <stop offset="100%" stop-color="#34C759"/>
+    </linearGradient>
+    <linearGradient id="ringGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64D2FF"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle inner glow overlay -->
+  <rect width="512" height="512" rx="115" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="4"/>
+
+  <!-- Apple style concentric activity / progress arcs & checkmark -->
+  <g filter="url(#shadow)" transform="translate(256, 256)">
+    <!-- Outer Ring (Coral Pink) -->
+    <circle cx="0" cy="0" r="145" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="145" fill="none" stroke="url(#ringGrad1)" stroke-width="22" stroke-linecap="round" stroke-dasharray="911" stroke-dashoffset="180" transform="rotate(-90)"/>
+
+    <!-- Middle Ring (Apple Green) -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="url(#ringGrad2)" stroke-width="22" stroke-linecap="round" stroke-dasharray="691" stroke-dashoffset="120" transform="rotate(-90)"/>
+
+    <!-- Inner Ring (Cyan/Blue) -->
+    <circle cx="0" cy="0" r="75" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="75" fill="none" stroke="url(#ringGrad3)" stroke-width="22" stroke-linecap="round" stroke-dasharray="471" stroke-dashoffset="70" transform="rotate(-90)"/>
+
+    <!-- Central SF Checkmark -->
+    <path d="M-28 2 L-10 20 L28 -18" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
